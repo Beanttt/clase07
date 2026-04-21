@@ -120,42 +120,7 @@
                 </table>
             </div>
             <small>Diseño y visualización de información</small>
-        </div>
-
-        <script>
-            const t = document.querySelector("#este");
-            const URL = "https://api.myjson.online/v1/records/2ff063af-401f-461f-b5ca-bf1081758e22	";
-
-            fetch(URL)
-                .then((respuesta) => {
-                    if (!respuesta.ok) {
-                        throw new Error("Error HTTP: " + respuesta.status);
-                    }
-                    return respuesta.json();
-                })
-                .then((datos) => {
-                    var trabajo = datos.data;
-                    console.log(trabajo);
-                    trabajo.forEach((x) => {
-                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.id}</td><td>${x.name}</td><td>${x.track}</td><td>${x.group}</td><td>${x.focus}</td></tr>`;
-                    });
-                })
-                .catch((error) => {
-                    console.error("Algo salió mal:", error);
-                });
-
-            function sinAcentos(str) {
-                return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-            }
-
-            document.getElementById("elInput").addEventListener("keyup", function () {
-                const valor = sinAcentos(this.value.toLowerCase());
-                document.querySelectorAll("#este tr").forEach(function (fila) {
-                    fila.style.display = sinAcentos(fila.textContent.toLowerCase()).includes(valor) ? "" : "none";
-                });
-            });
-        </script>
-        <?xml version="1.0" encoding="UTF-8"?>
+            <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1028.72 1503.3">
   <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
   <defs>
@@ -505,124 +470,124 @@
             <text class="st33" transform="translate(24 160.14)"><tspan x="0" y="0">—</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(813.4 22.14)"><tspan x="0" y="0">Robótica y Mecatrónica</tspan></text>
+            <text class="st33" transform="translate(802.92 22.14)"><tspan x="0" y="0">Robótica y Mecatrónica</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(814.02 36.85)"><tspan x="0" y="0">Gestión de Producción</tspan></text>
+            <text class="st33" transform="translate(802.92 36.85)"><tspan x="0" y="0">Gestión de Producción</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(808.16 51.56)"><tspan x="0" y="0">Gestión y Proyectos de Mención</tspan></text>
+            <text class="st33" transform="translate(802.92 51.56)"><tspan x="0" y="0">Gestión y Proyectos de Mención</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(809.09 66.28)"><tspan x="0" y="0">Patrimonio y Expresión Formal</tspan></text>
+            <text class="st33" transform="translate(802.92 66.28)"><tspan x="0" y="0">Patrimonio y Expresión Formal</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(803.54 84.35)"><tspan x="0" y="0">Experimentación Material y Upcycling</tspan></text>
+            <text class="st33" transform="translate(802.92 84.35)"><tspan x="0" y="0">Experimentación Material y Upcycling</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(807.24 105.77)"><tspan x="0" y="0">Experimentación y Artes Visuales</tspan></text>
+            <text class="st33" transform="translate(802.92 105.77)"><tspan x="0" y="0">Experimentación y Artes Visuales</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(810.94 127.2)"><tspan x="0" y="0">Inteligencia Artificial y Datos</tspan></text>
+            <text class="st33" transform="translate(802.92 127.2)"><tspan x="0" y="0">Inteligencia Artificial y Datos</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(810.32 148.62)"><tspan x="0" y="0">Realidad Virtual y Aumentada</tspan></text>
+            <text class="st33" transform="translate(802.92 148.62)"><tspan x="0" y="0">Realidad Virtual y Aumentada</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(805.08 173.4)"><tspan x="0" y="0">Computación y Pensamiento Lógico</tspan></text>
+            <text class="st33" transform="translate(802.92 173.4)"><tspan x="0" y="0">Computación y Pensamiento Lógico</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(804.15 201.54)"><tspan x="0" y="0">Bio-materiales y Nuevas Tecnologías</tspan></text>
+            <text class="st33" transform="translate(802.92 201.54)"><tspan x="0" y="0">Bio-materiales y Nuevas Tecnologías</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(814.64 229.68)"><tspan x="0" y="0">Oficios y Accesorios</tspan></text>
+            <text class="st33" transform="translate(802.92 229.68)"><tspan x="0" y="0">Oficios y Accesorios</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(813.1 257.82)"><tspan x="0" y="0">Metodologías Creativas</tspan></text>
+            <text class="st33" transform="translate(802.92 257.82)"><tspan x="0" y="0">Metodologías Creativas</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(803.84 285.96)"><tspan x="0" y="0">Prototipado Electrónico e Interacción</tspan></text>
+            <text class="st33" transform="translate(802.92 285.96)"><tspan x="0" y="0">Prototipado Electrónico e Interacción</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(812.48 314.09)"><tspan x="0" y="0">Gestión de Publicaciones</tspan></text>
+            <text class="st33" transform="translate(802.92 314.09)"><tspan x="0" y="0">Gestión de Publicaciones</tspan></text>
           </g>
           <g class="st31">
             <text class="st33" transform="translate(802.92 342.23)"><tspan x="0" y="0">Tecnologías de Energía y Sustentabilidad</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(812.17 370.37)"><tspan x="0" y="0">Imagen y Lenguaje Visual</tspan></text>
+            <text class="st33" transform="translate(802.92 370.37)"><tspan x="0" y="0">Imagen y Lenguaje Visual</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(811.55 398.51)"><tspan x="0" y="0">Investigación y Metodología</tspan></text>
+            <text class="st33" transform="translate(802.92 398.51)"><tspan x="0" y="0">Investigación y Metodología</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(806.62 426.64)"><tspan x="0" y="0">Laboratorio de Materiales y Oficios</tspan></text>
+            <text class="st33" transform="translate(802.92 426.64)"><tspan x="0" y="0">Laboratorio de Materiales y Oficios</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(810.01 454.78)"><tspan x="0" y="0">Morfología Textil y Superficies</tspan></text>
+            <text class="st33" transform="translate(802.92 454.78)"><tspan x="0" y="0">Morfología Textil y Superficies</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(805.7 486.28)"><tspan x="0" y="0">Ecodiseño y Sostenibilidad Material</tspan></text>
+            <text class="st33" transform="translate(802.92 486.28)"><tspan x="0" y="0">Ecodiseño y Sostenibilidad Material</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(812.79 521.13)"><tspan x="0" y="0">Oficios y Cultura Material</tspan></text>
+            <text class="st33" transform="translate(802.92 521.13)"><tspan x="0" y="0">Oficios y Cultura Material</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(804.46 555.98)"><tspan x="0" y="0">Biomecánica y Ergonomía Avanzada</tspan></text>
+            <text class="st33" transform="translate(802.92 555.98)"><tspan x="0" y="0">Biomecánica y Ergonomía Avanzada</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(803.23 590.83)"><tspan x="0" y="0">Sistemas Constructivos y Estructuras</tspan></text>
+            <text class="st33" transform="translate(802.92 590.83)"><tspan x="0" y="0">Sistemas Constructivos y Estructuras</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(808.78 625.68)"><tspan x="0" y="0">Gestión Cultural y de Industrias</tspan></text>
+            <text class="st33" transform="translate(802.92 625.68)"><tspan x="0" y="0">Gestión Cultural y de Industrias</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(804.77 663.89)"><tspan x="0" y="0">Manufactura y Producción Industrial</tspan></text>
+            <text class="st33" transform="translate(802.92 663.89)"><tspan x="0" y="0">Manufactura y Producción Industrial</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(814.95 705.45)"><tspan x="0" y="0">Representación y Bocetaje (Sketching)</tspan></text>
+            <text class="st33" transform="translate(802.92 705.45)"><tspan x="0" y="0">Representación y Bocetaje (Sketching)</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(807.55 747.01)"><tspan x="0" y="0">Morfología de Objetos Complejos</tspan></text>
+            <text class="st33" transform="translate(802.92 747.01)"><tspan x="0" y="0">Morfología de Objetos Complejos</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(808.47 788.58)"><tspan x="0" y="0">Programación y Desarrollo Web</tspan></text>
+            <text class="st33" transform="translate(802.92 788.58)"><tspan x="0" y="0">Programación y Desarrollo Web</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(811.86 830.14)"><tspan x="0" y="0">Estrategia y Sostenibilidad</tspan></text>
+            <text class="st33" transform="translate(802.92 830.14)"><tspan x="0" y="0">Estrategia y Sostenibilidad</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(809.7 871.7)"><tspan x="0" y="0">Modelado y Simulación Digital</tspan></text>
+            <text class="st33" transform="translate(802.92 871.7)"><tspan x="0" y="0">Modelado y Simulación Digital</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(814.33 913.27)"><tspan x="0" y="0">Patrimonio e Identidad</tspan></text>
+            <text class="st33" transform="translate(802.92 913.27)"><tspan x="0" y="0">Patrimonio e Identidad</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(807.85 958.19)"><tspan x="0" y="0">Comunicación Visual Estratégica</tspan></text>
+            <text class="st33" transform="translate(802.92 958.19)"><tspan x="0" y="0">Comunicación Visual Estratégica</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(806.31 1006.46)"><tspan x="0" y="0">Teoría y Aplicación del Color (CMF)</tspan></text>
+            <text class="st33" transform="translate(802.92 1006.46)"><tspan x="0" y="0">Teoría y Aplicación del Color (CMF)</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(810.63 1054.74)"><tspan x="0" y="0">Narrativa Visual e Ilustración</tspan></text>
+            <text class="st33" transform="translate(802.92 1054.74)"><tspan x="0" y="0">Narrativa Visual e Ilustración</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(805.39 1103.01)"><tspan x="0" y="0">Composición Editorial y Tipográfica</tspan></text>
+            <text class="st33" transform="translate(802.92 1103.01)"><tspan x="0" y="0">Composición Editorial y Tipográfica</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(811.25 1151.29)"><tspan x="0" y="0">Emprendimiento y Negocios</tspan></text>
+            <text class="st33" transform="translate(802.92 1151.29)"><tspan x="0" y="0">Emprendimiento y Negocios</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(806 1202.92)"><tspan x="0" y="0">Post-producción y Medios Digitales</tspan></text>
+            <text class="st33" transform="translate(802.92 1202.92)"><tspan x="0" y="0">Post-producción y Medios Digitales</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(806.93 1261.27)"><tspan x="0" y="0">Diseño de Servicios y Experiencia</tspan></text>
+            <text class="st33" transform="translate(802.92 1261.27)"><tspan x="0" y="0">Diseño de Servicios y Experiencia</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(809.4 1339.75)"><tspan x="0" y="0">Vinculación Territorial y Social</tspan></text>
+            <text class="st33" transform="translate(802.92 1339.75)"><tspan x="0" y="0">Vinculación Territorial y Social</tspan></text>
           </g>
           <g class="st31">
-            <text class="st33" transform="translate(813.71 1445.08)"><tspan x="0" y="0">Teoría y Crítica Cultural</tspan></text>
+            <text class="st33" transform="translate(802.92 1445.08)"><tspan x="0" y="0">Teoría y Crítica Cultural</tspan></text>
           </g>
           <g class="st30">
             <text class="st33" transform="translate(411.5 315.17)"><tspan x="0" y="0">Morfología</tspan></text>
@@ -652,5 +617,179 @@
     </g>
   </g>
 </svg>
+        </div>
+
+        <script>
+            const t = document.querySelector("#este");
+            const URL = "https://api.myjson.online/v1/records/2ff063af-401f-461f-b5ca-bf1081758e22	";
+
+            fetch(URL)
+                .then((respuesta) => {
+                    if (!respuesta.ok) {
+                        throw new Error("Error HTTP: " + respuesta.status);
+                    }
+                    return respuesta.json();
+                })
+                .then((datos) => {
+                    var trabajo = datos.data;
+                    console.log(trabajo);
+                    trabajo.forEach((x) => {
+                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.id}</td><td>${x.name}</td><td>${x.track}</td><td>${x.group}</td><td>${x.focus}</td></tr>`;
+                    });
+                })
+                .catch((error) => {
+                    console.error("Algo salió mal:", error);
+                });
+
+            function sinAcentos(str) {
+                return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            }
+
+            document.getElementById("elInput").addEventListener("keyup", function () {
+                const valor = sinAcentos(this.value.toLowerCase());
+                document.querySelectorAll("#este tr").forEach(function (fila) {
+                    fila.style.display = sinAcentos(fila.textContent.toLowerCase()).includes(valor) ? "" : "none";
+                });
+            });
+        </script>
+        <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1028.72 1503.3">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st11, .st12, .st13, .st14, .st15, .st16, .st17, .st18, .st19, .st20, .st21, .st22, .st23, .st24, .st25, .st26, .st27, .st28, .st29 {
+        fill: none;
+      }
+
+      .st0, .st3, .st23 {
+        stroke: #8c564b;
+      }
+
+      .st0, .st24 {
+        stroke-width: 87.26px;
+      }
+
+      .st1 {
+        stroke: #e377c2;
+      }
+
+      .st1, .st12, .st18, .st20 {
+        stroke-width: 6.71px;
+      }
+
+      .st2 {
+        stroke-width: 60.41px;
+      }
+
+      .st2, .st10, .st17 {
+        stroke: #d62728;
+      }
+
+      .st3 {
+        stroke-width: 120.83px;
+      }
+
+      .st30 {
+        display: none;
+      }
+
+      .st30, .st31, .st32, .st33 {
+        isolation: isolate;
+      }
+
+      .st4, .st6, .st26 {
+        stroke-width: 26.85px;
+      }
+
+      .st4, .st14, .st16, .st19, .st20, .st25 {
+        stroke: #2ca02c;
+      }
+
+      .st34 {
+        fill: #fff;
+      }
+
+      .st5, .st11, .st12, .st15, .st26, .st27 {
+        stroke: #1f77b4;
+      }
+
+      .st5, .st16, .st22 {
+        stroke-width: 33.56px;
+      }
+
+      .st6, .st8, .st9, .st13, .st18, .st21, .st22, .st24 {
+        stroke: #ff7f0e;
+      }
+
+      .st7 {
+        stroke-width: 100.69px;
+      }
+
+      .st7, .st28, .st29 {
+        stroke: #9467bd;
+      }
+
+      .st8, .st11, .st14 {
+        stroke-width: 20.14px;
+      }
+
+      .st9 {
+        stroke-width: 107.4px;
+      }
+
+      .st10 {
+        stroke-width: 201.38px;
+      }
+
+      .st13, .st19 {
+        stroke-width: 40.28px;
+      }
+
+      .st15 {
+        stroke-width: 46.99px;
+      }
+
+      .st17 {
+        stroke-width: 73.84px;
+      }
+
+      .st21 {
+        stroke-width: 53.7px;
+      }
+
+      .st35 {
+        mix-blend-mode: multiply;
+      }
+
+      .st23 {
+        stroke-width: 187.95px;
+      }
+
+      .st32 {
+        fill: #7b7b7b;
+        font-size: 12px;
+      }
+
+      .st32, .st33 {
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .st25, .st27 {
+        stroke-width: 13.43px;
+      }
+
+      .st28 {
+        stroke-width: 114.11px;
+      }
+
+      .st33 {
+        font-size: 10px;
+      }
+
+      .st29 {
+        stroke-width: 214.8px;
+      }
+    </style>
     </body>
 </html>
